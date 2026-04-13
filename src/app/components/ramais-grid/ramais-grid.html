@@ -1,0 +1,27 @@
+@if (loading) {
+  <div class="ramais-grid">
+    @for (sk of skeletons; track $index) {
+      <div class="skeleton-card" aria-hidden="true">
+        <div class="skeleton-line skeleton-title"></div>
+        <div class="skeleton-line skeleton-title skeleton-title-short"></div>
+        <div class="skeleton-divider"></div>
+        <div class="skeleton-line skeleton-number"></div>
+      </div>
+    }
+  </div>
+} @else if (ramais.length === 0) {
+  <div class="empty-state" role="status">
+    <i class="fas fa-search" aria-hidden="true"></i>
+    @if (query) {
+      <p>Nenhum ramal encontrado para <strong>"{{ query }}"</strong></p>
+    } @else {
+      <p>Nenhum ramal disponível.</p>
+    }
+  </div>
+} @else {
+  <div class="ramais-grid">
+    @for (ramal of ramais; track ramal.ramal) {
+      <app-ramal-card [ramal]="ramal" />
+    }
+  </div>
+}

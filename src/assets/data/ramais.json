@@ -1,0 +1,16 @@
+[
+  { "setor": "PREFEITURA MUNICIPAL DE BARRA DO PIRAÍ (SECRETARIA DE ADMINISTRAÇÃO)", "ramal": 2001 },
+  { "setor": "SECRETARIA DE INOVAÇÃO E TECNOLOGIA DA INFORMAÇÃO", "ramal": 2002 },
+  { "setor": "SECRETARIA DE HABILITAÇÃO", "ramal": 2003 },
+  { "setor": "SECRETARIA DE GOVERNO", "ramal": 2004 },
+  { "setor": "SECRETARIA DE FAZENDA", "ramal": 2005 },
+  { "setor": "PROCURADORIA GERAL", "ramal": 2006 },
+  { "setor": "SECRETARIA DE AGRICULTURA", "ramal": 2007 },
+  { "setor": "SECRETARIA DE ÁGUA E ESGOTO (Administração)", "ramal": 2008 },
+  { "setor": "SECRETARIA DE ÁGUA E ESGOTO (Tratamento de água)", "ramal": 2009 },
+  { "setor": "SECRETARIA DE AMBIENTE", "ramal": 2010 },
+  { "setor": "SECRETARIA DE ASSISTÊNCIA SOCIAL", "ramal": 2011 },
+  { "setor": "SECRETARIA DE CIDADANIA E ORDEM PÚBLICA", "ramal": 2012 },
+  { "setor": "SECRETARIA DE COMUNICAÇÃO", "ramal": 2013 },
+  { "setor": "SECRETARIA DE CULTURA", "ramal": 2014 }
+]

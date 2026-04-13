@@ -1,0 +1,19 @@
+<div class="search-container">
+  <div class="search-input-wrapper">
+    <i class="fas fa-search search-icon" aria-hidden="true"></i>
+    <input
+      type="search"
+      class="search-input"
+      placeholder="Buscar secretaria ou ramal..."
+      [value]="_inputValue"
+      (input)="onInput($event)"
+      autocomplete="off"
+      aria-label="Buscar secretaria ou ramal"
+    />
+    @if (_inputValue) {
+      <button class="clear-btn" (click)="clear()" aria-label="Limpar busca" type="button">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+    }
+  </div>
+</div>

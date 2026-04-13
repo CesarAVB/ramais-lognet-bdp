@@ -1,0 +1,26 @@
+<app-spinner />
+<app-alert />
+
+<div class="page-wrapper">
+  <app-header />
+
+  <div class="search-wrapper">
+    <app-search-bar [query]="query()" (queryChange)="onQueryChange($event)" />
+  </div>
+
+  <main class="main-content">
+    @if (erro()) {
+      <div class="error-state">
+        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+        <p>Não foi possível carregar os ramais. Verifique o arquivo de dados.</p>
+      </div>
+    } @else {
+      <app-ramais-grid
+        [ramais]="filtered()"
+        [loading]="loading()"
+        [query]="query()" />
+    }
+  </main>
+
+  <app-footer />
+</div>

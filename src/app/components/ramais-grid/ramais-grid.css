@@ -1,0 +1,131 @@
+.ramais-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+/* =============================================
+   Variações de acento por posição
+   Cria ritmo visual sem repetição monótona
+   ============================================= */
+app-ramal-card:nth-child(4n + 1) {
+  --card-accent:       #E84E0F;
+  --card-accent-light: #F97316;
+}
+
+app-ramal-card:nth-child(4n + 2) {
+  --card-accent:       #C5400C;
+  --card-accent-light: #E84E0F;
+}
+
+app-ramal-card:nth-child(4n + 3) {
+  --card-accent:       #F97316;
+  --card-accent-light: #FB923C;
+}
+
+app-ramal-card:nth-child(4n + 4) {
+  --card-accent:       #1A6BAD;
+  --card-accent-light: #2D88CF;
+}
+
+/* =============================================
+   Skeleton loading
+   ============================================= */
+.skeleton-card {
+  background: var(--color-surface);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-primary-100);
+  padding: var(--spacing-lg);
+  padding-top: calc(var(--spacing-lg) + 4px);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary-100), var(--color-primary-200), var(--color-primary-100));
+  background-size: 200% 100%;
+  animation: shimmer 1.6s infinite;
+}
+
+.skeleton-line {
+  border-radius: var(--border-radius-sm);
+  background: linear-gradient(
+    90deg,
+    var(--color-primary-50) 25%,
+    #f5ede6 50%,
+    var(--color-primary-50) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s infinite;
+}
+
+.skeleton-title {
+  height: 0.875rem;
+  width: 90%;
+}
+
+.skeleton-title-short {
+  width: 60%;
+}
+
+.skeleton-divider {
+  height: 1px;
+  background: var(--color-primary-100);
+  margin: var(--spacing-xs) 0;
+}
+
+.skeleton-number {
+  height: 1.6rem;
+  width: 35%;
+  margin-top: var(--spacing-xs);
+}
+
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* =============================================
+   Estado vazio
+   ============================================= */
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  color: var(--color-muted);
+}
+
+.empty-state i {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+  display: block;
+  color: var(--color-primary-200);
+}
+
+.empty-state p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* =============================================
+   Responsividade
+   ============================================= */
+@media (max-width: 1024px) {
+  .ramais-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ramais-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}
