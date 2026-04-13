@@ -111,12 +111,13 @@
 /* ─── Faixa de contato ──────────────────────────── */
 .contact-strip {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  padding: 0.6rem 1.75rem;
+  gap: 0.35rem;
+  padding: 0.65rem 1.75rem;
   background: var(--color-primary-50);
   border: 1.5px solid var(--color-primary-100);
-  border-radius: 3rem;
+  border-radius: 1.25rem;
   font-size: 0.82rem;
   font-weight: 600;
   white-space: nowrap;
@@ -158,9 +159,9 @@
 
 .contact-sep {
   display: block;
-  width: 1px;
-  height: 1.25rem;
-  background: rgba(232, 78, 15, 0.28);
+  width: 60%;
+  height: 1px;
+  background: rgba(232, 78, 15, 0.22);
   border-radius: 1px;
 }
 
@@ -229,21 +230,15 @@
   .header-title    { font-size: 1.75rem; }
   .header-subtitle { font-size: 0.63rem; letter-spacing: 0.07em; }
 
-  /*
-   * Contact strip: horizontal, lado a lado
-   * Separador vertical escondido — espaço
-   * em branco entre os itens faz a divisão.
-   */
+  /* Contact strip — mantém coluna, só ajusta largura e padding */
   .contact-strip {
     width: 100%;
-    justify-content: space-between;
-    padding: 0.55rem 1rem;
+    padding: 0.55rem 1.25rem;
     border-radius: var(--border-radius-lg);
     white-space: normal;
-    gap: 0.5rem;
   }
 
-  .contact-sep { display: none; }
+  .contact-sep { width: 50%; }
 
   .phone-number { font-size: 0.95rem; }
 
