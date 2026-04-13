@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ThemeService } from '../../services/theme';
 
 @Component({
   selector: 'app-header',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './header.html',
   styleUrl: './header.css'
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  readonly theme = inject(ThemeService);
+}

@@ -1,7 +1,7 @@
 <header class="app-header">
   <div class="header-inner">
 
-    <!-- Logos + Marca em linha única -->
+    <!-- Logos + Marca + Toggle em linha única -->
     <div class="header-brand-row">
       <img src="assets/logo-PMBP.png" alt="Prefeitura Municipal de Barra do Piraí" class="logo-pmbp" />
 
@@ -10,7 +10,21 @@
         <span class="header-subtitle">Prefeitura Municipal de Barra do Piraí</span>
       </div>
 
-      <img src="assets/logo_horizontal.png" alt="LOGNET" class="logo-lognet" />
+      <div class="header-end">
+        <img src="assets/logo_horizontal.png" alt="LOGNET" class="logo-lognet" />
+        <button
+          class="theme-toggle"
+          type="button"
+          (click)="theme.toggle()"
+          [attr.aria-label]="theme.isDark() ? 'Mudar para tema claro' : 'Mudar para tema escuro'"
+          [attr.aria-pressed]="theme.isDark()">
+          @if (theme.isDark()) {
+            <i class="fas fa-sun" aria-hidden="true"></i>
+          } @else {
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          }
+        </button>
+      </div>
     </div>
 
     <!-- Faixa de contato -->
