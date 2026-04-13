@@ -28,8 +28,8 @@
   --color-text:      #1E2A38;   /* quase-preto azulado */
   --color-muted:     #7A6B62;   /* marrom-acinzentado, não cinza puro */
 
-  /* Tipografia — system-ui com fallback robusto (sem Inter/Arial) */
-  --font-family: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+  /* Tipografia — Plus Jakarta Sans com fallback robusto (sem Inter/Arial) */
+  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-size-base: 1rem;
   --line-height: 1.6;
 
@@ -69,7 +69,10 @@ body {
   font-size: var(--font-size-base);
   line-height: var(--line-height);
   background-color: var(--color-bg);
-  background-image: linear-gradient(160deg, #FDF5EE 0%, #FBF8F5 45%, #F4F6F9 100%);
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(232, 78, 15, 0.045) 1px, transparent 0),
+    linear-gradient(160deg, #FDF5EE 0%, #FBF8F5 45%, #F4F6F9 100%);
+  background-size: 28px 28px, 100% 100%;
   background-attachment: fixed;
   color: var(--color-text);
   min-height: 100vh;
