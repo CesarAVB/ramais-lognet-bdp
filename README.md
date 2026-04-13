@@ -1,81 +1,68 @@
 # ramais-lognet-bdp
 
-Diretório de ramais VoIP da Prefeitura Municipal de Barra do Piraí. SPA Angular com busca em tempo real por secretaria ou número de ramal.
+Diretório de ramais VoIP da Prefeitura Municipal de Barra do Piraí — SPA Angular 20 (standalone components) que carrega um JSON estático e permite busca em tempo real por secretaria ou número de ramal.
 
-## Tecnologias
+**Visão Geral**
+- **Tipo:** SPA Angular 20 (standalone)
+- **Dados:** arquivo estático em [src/assets/data/ramais.json](src/assets/data/ramais.json)
+- **Design spec:** [docs/superpowers/specs/2026-04-13-ramais-design.md](docs/superpowers/specs/2026-04-13-ramais-design.md)
 
-| Tecnologia   | Versão |
-|--------------|--------|
-| Angular      | 20     |
-| TypeScript   | 5.x    |
-| Bootstrap    | 5.3    |
-| Font Awesome | 6.5    |
-| RxJS         | 7.x    |
+**Tecnologias principais**
+- **Angular:** 20
+- **TypeScript:** conforme `package.json`
+- **RxJS, zone.js** — usadas pelo runtime Angular
 
-## Pré-requisitos
+**Pré-requisitos**
+- **Node.js:** 22+ recomendado
+- **npm** (vem com Node)
 
-- Node.js 22+
-- Angular CLI 20: `npm install -g @angular/cli`
+**Como rodar localmente**
+1. Instale dependências:
 
-## Como rodar localmente
+```bash
+npm install
+```
 
-1. Instale as dependências:
-   ```bash
-   npm install
-   ```
+2. Inicie o servidor de desenvolvimento (usa o `ng` local instalado por `npm install`):
 
-2. Inicie a aplicação:
-   ```bash
-   ng serve
-   ```
+```bash
+npm start
+# ou: npx ng serve
+```
 
-3. Acesse: `http://localhost:4200`
+3. Abra no navegador: http://localhost:4200
 
-## Como atualizar os ramais
+**Build para produção**
 
-Edite o arquivo `src/assets/data/ramais.json`. Cada entrada segue o formato:
+```bash
+npm run build
+```
+
+**Dados / Atualização de ramais**
+- Edite [src/assets/data/ramais.json](src/assets/data/ramais.json). Cada item tem o formato:
 
 ```json
 { "setor": "NOME DA SECRETARIA", "ramal": 2001 }
 ```
+- A ordem no JSON determina a ordem de exibição.
 
-A ordem no JSON determina a ordem de exibição na página.
+**Assets (logos)**
+- Os logos estão na raiz em `resources/` e são copiados pelo build para `assets` conforme [angular.json](angular.json).
+- Arquivos: [resources/logo-PMBP.png](resources/logo-PMBP.png), [resources/logo_horizontal.png](resources/logo_horizontal.png), [resources/favicon.ico](resources/favicon.ico).
 
-## Assets (logos)
+**Arquitetura / Estrutura**
+- Componentes principais: [src/app/app.ts](src/app/app.ts), [src/app/components/header/header.ts](src/app/components/header/header.ts), [src/app/components/search-bar/search-bar.ts](src/app/components/search-bar/search-bar.ts), [src/app/components/ramais-grid/ramais-grid.ts](src/app/components/ramais-grid/ramais-grid.ts), [src/app/components/ramal-card/ramal-card.ts](src/app/components/ramal-card/ramal-card.ts).
+- Serviços: [src/app/services/ramais.ts](src/app/services/ramais.ts), [src/app/services/loading.ts](src/app/services/loading.ts).
 
-Os logos estão na pasta `resources/` na raiz do projeto:
+**Notas de design importantes**
+- Componentes standalone, uso de `signal()` e `computed()` para estado (ver o spec em [docs/superpowers/specs/2026-04-13-ramais-design.md](docs/superpowers/specs/2026-04-13-ramais-design.md)).
+- Busca com debounce (300ms), normalização sem acentos e filtro por setor e ramal.
 
-| Arquivo | Uso |
-|---|---|
-| `resources/logo-PMBP.png` | Logo da Prefeitura (header, lado esquerdo) |
-| `resources/logo_horizontal.png` | Logo LOGNET (header, lado direito) |
-| `resources/favicon.ico` | Ícone da aba do navegador |
+**Como contribuir**
+- Abra uma branch `feature/` com uma descrição curta.
+- Atualize `src/assets/data/ramais.json` se for editar dados.
+- Envie PR com descrição das mudanças e screenshots quando for alteração visual.
 
-O `angular.json` está configurado para copiar esses arquivos automaticamente no build.
+---
 
-## Estrutura de pastas
-
-```
-src/app/
-  components/
-    alert/          → mensagens de feedback
-    badge-status/   → badge colorido de status
-    footer/         → rodapé
-    header/         → cabeçalho com logos
-    ramal-card/     → card individual de ramal
-    ramais-grid/    → grade de cards + skeleton + estado vazio
-    search-bar/     → campo de busca com debounce
-    spinner/        → overlay de carregamento
-  services/
-    alert.ts        → serviço de alertas
-    loading.ts      → serviço de spinner
-    loading-interceptor.ts
-    ramais.ts       → carrega o JSON de ramais
-  shared/
-    models/ramal.ts → interface Ramal
-  app.ts|html|css   → componente raiz
-  app.config.ts     → configuração do Angular
-src/assets/
-  data/ramais.json  → dados dos ramais
-src/environments/   → configurações de ambiente
-```
+Se quiser, posso também: executar a aplicação localmente (`npm install` + `npm start`) ou adicionar instruções de deploy (GitHub Pages / Netlify / Azure). Diga qual prefere.
