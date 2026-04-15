@@ -1,5 +1,4 @@
-import { Component, inject } from '@angular/core';
-import { ThemeService } from '../../services/theme';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,5 +7,7 @@ import { ThemeService } from '../../services/theme';
   styleUrl: './header.css'
 })
 export class HeaderComponent {
-  readonly theme = inject(ThemeService);
+  @Input() totalRamais = 0;
+  @Input() filteredTotal = 0;
+  @Input() query = '';
 }

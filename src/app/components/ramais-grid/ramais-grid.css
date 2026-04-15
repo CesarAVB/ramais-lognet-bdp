@@ -1,43 +1,16 @@
 .ramais-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-lg);
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
 }
 
-/* =============================================
-   Variações de acento por posição
-   Cria ritmo visual sem repetição monótona
-   ============================================= */
-app-ramal-card:nth-child(4n + 1) {
-  --card-accent:       #E84E0F;
-  --card-accent-light: #F97316;
-}
-
-app-ramal-card:nth-child(4n + 2) {
-  --card-accent:       #C5400C;
-  --card-accent-light: #E84E0F;
-}
-
-app-ramal-card:nth-child(4n + 3) {
-  --card-accent:       #F97316;
-  --card-accent-light: #FB923C;
-}
-
-app-ramal-card:nth-child(4n + 4) {
-  --card-accent:       #1A6BAD;
-  --card-accent-light: #2D88CF;
-}
-
-/* =============================================
-   Skeleton loading
-   ============================================= */
 .skeleton-card {
-  background: var(--color-surface);
-  border-radius: var(--border-radius-lg);
-  border: 1px solid var(--color-primary-100);
-  padding: var(--spacing-lg);
-  padding-top: calc(var(--spacing-lg) + 4px);
-  box-shadow: var(--shadow-sm);
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 1.35rem;
+  border: 1px solid rgba(232, 78, 15, 0.12);
+  padding: 1rem;
+  padding-top: calc(1rem + 4px);
+  box-shadow: 0 12px 30px rgba(30, 42, 56, 0.06);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
@@ -48,7 +21,9 @@ app-ramal-card:nth-child(4n + 4) {
 .skeleton-card::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 4px;
   background: linear-gradient(90deg, var(--color-primary-100), var(--color-primary-200), var(--color-primary-100));
   background-size: 200% 100%;
@@ -89,17 +64,22 @@ app-ramal-card:nth-child(4n + 4) {
 }
 
 @keyframes shimmer {
-  0%   { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
 }
 
-/* =============================================
-   Estado vazio
-   ============================================= */
 .empty-state {
   text-align: center;
   padding: var(--spacing-2xl) var(--spacing-lg);
   color: var(--color-muted);
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid var(--color-border);
+  border-radius: 1.5rem;
 }
 
 .empty-state i {
@@ -114,18 +94,15 @@ app-ramal-card:nth-child(4n + 4) {
   margin: 0;
 }
 
-/* =============================================
-   Responsividade
-   ============================================= */
-@media (max-width: 1024px) {
+@media (min-width: 700px) {
   .ramais-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 1100px) {
   .ramais-grid {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-md);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
   }
 }

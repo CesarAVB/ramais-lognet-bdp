@@ -35,6 +35,11 @@
                 "output": "assets"
               },
               {
+                "glob": "logo.png",
+                "input": "resources",
+                "output": "assets"
+              },
+              {
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
@@ -53,7 +58,7 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
+                  "maximumWarning": "5kB",
                   "maximumError": "8kB"
                 }
               ],

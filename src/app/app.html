@@ -2,24 +2,60 @@
 <app-alert />
 
 <div class="page-wrapper">
-  <app-header />
+  <app-header
+    [totalRamais]="totalRamais()"
+    [filteredTotal]="filteredTotal()"
+    [query]="query()" />
 
-  <div class="search-wrapper">
-    <app-search-bar [query]="query()" (queryChange)="onQueryChange($event)" />
-  </div>
+  <section class="search-wrapper">
+    <div class="search-shell">
+      <div class="search-copy">
+        <label class="search-label" for="ramais-search">Buscar ramal</label>
+        <h2 class="search-title">Localize um setor ou número rapidamente</h2>
+        <p>Digite o nome do setor ou o número do ramal.</p>
+      </div>
+
+      <app-search-bar [query]="query()" (queryChange)="onQueryChange($event)" />
+
+      <div class="search-status" aria-live="polite">
+        <span class="status-pill">
+          <small>Resultados</small>
+          <strong>{{ filteredTotal() }}</strong>
+        </span>
+        <span class="status-pill subtle">
+          <small>Total</small>
+          <strong>{{ totalRamais() }}</strong>
+        </span>
+        @if (query()) {
+          <span class="status-pill query-pill">
+            <small>Filtro</small>
+            <strong>{{ query() }}</strong>
+          </span>
+        }
+      </div>
+    </div>
+  </section>
 
   <main class="main-content">
-    @if (erro()) {
-      <div class="error-state">
-        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
-        <p>Não foi possível carregar os ramais. Verifique o arquivo de dados.</p>
+    <section class="results-section">
+      <div class="results-header">
+        <div>
+          <h2>Lista de ramais</h2>
+        </div>
       </div>
-    } @else {
-      <app-ramais-grid
-        [ramais]="filtered()"
-        [loading]="loading()"
-        [query]="query()" />
-    }
+
+      @if (erro()) {
+        <div class="error-state">
+          <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+          <p>Não foi possível carregar os ramais. Verifique o arquivo de dados.</p>
+        </div>
+      } @else {
+        <app-ramais-grid
+          [ramais]="filtered()"
+          [loading]="loading()"
+          [query]="query()" />
+      }
+    </section>
   </main>
 
   <app-footer />

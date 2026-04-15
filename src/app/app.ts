@@ -43,6 +43,9 @@ export class AppComponent implements OnInit {
     );
   });
 
+  readonly totalRamais = computed(() => this.ramais().length);
+  readonly filteredTotal = computed(() => this.filtered().length);
+
   ngOnInit(): void {
     this.ramaisService.carregar().subscribe({
       next: (dados) => {

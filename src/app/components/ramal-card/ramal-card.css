@@ -1,8 +1,8 @@
 .ramal-card {
-  background: var(--color-surface);
-  border-radius: var(--border-radius-lg);
-  padding: var(--spacing-lg);
-  box-shadow: var(--shadow-sm);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 249, 246, 0.96));
+  border-radius: 1.35rem;
+  padding: 1rem;
+  box-shadow: 0 14px 30px rgba(30, 42, 56, 0.06);
   transition: box-shadow var(--transition-base), transform var(--transition-base), background var(--transition-base);
   display: flex;
   flex-direction: column;
@@ -13,17 +13,17 @@
   border: 1px solid var(--color-border);
 }
 
-/* Barra de acento no topo */
 .ramal-card::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--card-accent, var(--color-primary)) 0%, var(--card-accent-light, #F97316) 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--card-accent, var(--color-primary)) 0%, var(--card-accent-light, #f97316) 100%);
   border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
 }
 
-/* Brilho diagonal no hover */
 .ramal-card::after {
   content: '';
   position: absolute;
@@ -37,29 +37,26 @@
 }
 
 .ramal-card:hover {
-  box-shadow: 0 8px 28px rgba(232, 78, 15, 0.16);
-  transform: translateY(-3px);
+  box-shadow: 0 18px 36px rgba(232, 78, 15, 0.14);
+  transform: translateY(-2px);
 }
 
 .ramal-card:hover::after {
   opacity: 1;
 }
 
-/* ─── Nome do setor ─────────────────────────── */
 .setor-name {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   font-weight: 700;
   color: var(--color-text);
   line-height: 1.5;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.01em;
   flex: 1;
   position: relative;
   z-index: 1;
-  padding-top: 0.1rem;
+  padding-top: 0.2rem;
 }
 
-/* ─── Rodapé: separador + label esq / número dir ─ */
 .ramal-footer {
   display: flex;
   align-items: center;
@@ -72,9 +69,8 @@
   z-index: 1;
 }
 
-/* "Ramal" — lado esquerdo */
 .ramal-label {
-  font-size: 0.6rem;
+  font-size: 0.66rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -83,7 +79,6 @@
   flex-shrink: 0;
 }
 
-/* Número — lado direito */
 .ramal-number {
   display: flex;
   align-items: center;
@@ -91,7 +86,7 @@
 }
 
 .ramal-digits {
-  font-size: 1.75rem;
+  font-size: clamp(1.7rem, 8vw, 2.1rem);
   font-weight: 800;
   color: var(--card-accent, var(--color-primary));
   font-variant-numeric: tabular-nums;
@@ -100,11 +95,11 @@
 }
 
 .ramal-icon {
-  width: 2rem;
-  height: 2rem;
-  background: linear-gradient(135deg, var(--card-accent, var(--color-primary)), var(--card-accent-light, #F97316));
+  width: 2.2rem;
+  height: 2.2rem;
+  background: linear-gradient(135deg, var(--card-accent, var(--color-primary)), var(--card-accent-light, #f97316));
   color: #fff;
-  border-radius: 50%;
+  border-radius: 0.9rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
