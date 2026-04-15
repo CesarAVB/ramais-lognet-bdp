@@ -1,136 +1,538 @@
 [
-  { "setor": "PREFEITURA MUNICIPAL DE BARRA DO PIRAÍ (SECRETARIA DE ADMINISTRAÇÃO)", "ramal": 1001 },
-  { "setor": "SECRETARIA DE INOVAÇÃO E TECNOLOGIA DA INFORMAÇÃO", "ramal": 1002 },
-  { "setor": "SECRETARIA DE HABILITAÇÃO", "ramal": 1003 },
-  { "setor": "SECRETARIA DE GOVERNO", "ramal": 1004 },
-  { "setor": "SECRETARIA DE FAZENDA", "ramal": 1005 },
-  { "setor": "PROCURADORIA GERAL", "ramal": 1006 },
-  { "setor": "SECRETARIA DE AGRICULTURA", "ramal": 1007 },
-  { "setor": "SECRETARIA DE ÁGUA E ESGOTO (ADMINISTRAÇÃO)", "ramal": 1008 },
-  { "setor": "SECRETARIA DE ÁGUA E ESGOTO (TRATAMENTO DE ÁGUA)", "ramal": 1009 },
-  { "setor": "SECRETARIA DE AMBIENTE", "ramal": 1010 },
-  { "setor": "SECRETARIA DE ASSISTÊNCIA SOCIAL", "ramal": 1011 },
-  { "setor": "SECRETARIA DE CIDADANIA E ORDEM PÚBLICA", "ramal": 1012 },
-  { "setor": "SECRETARIA DE COMUNICAÇÃO", "ramal": 1013 },
-  { "setor": "SECRETARIA DE CULTURA", "ramal": 1014 },
-  { "setor": "SECRETARIA DE DEFESA CIVIL", "ramal": 1015 },
-  { "setor": "SECRETARIA DE OBRAS PÚBLICAS", "ramal": 1016 },
-  { "setor": "SECRETARIA DE RECURSOS HUMANOS", "ramal": 1017 },
-  { "setor": "SECRETARIA DE SERVIÇOS PÚBLICOS", "ramal": 1018 },
-  { "setor": "SECRETARIA DE TRABALHO E DESENVOLVIMENTO ECONÔMICO*", "ramal": 1019 },
-  { "setor": "SECRETARIA DE TURISMO E CULTURA", "ramal": 1020 },
-  { "setor": "SECRETARIA DO COMPLEXO DA CALIFÓRNIA", "ramal": 1022 },
-  { "setor": "SECRETARIA DO BEM ESTAR ANIMAL", "ramal": 1023 },
-  { "setor": "CONTROLADORIA", "ramal": 1024 },
-  { "setor": "ALMOXARIFADO", "ramal": 1025 },
-  { "setor": "PROCON", "ramal": 1026 },
-  { "setor": "SINE", "ramal": 1027 },
-  { "setor": "JUCERJA", "ramal": 1028 },
-  { "setor": "ARQUIVO MUNICIPAL", "ramal": 1029 },
-  { "setor": "PATRIMONIO", "ramal": 1030 },
-  { "setor": "LGBT", "ramal": 1031 },
-  { "setor": "POSTO GUARDA MUNICIPAL", "ramal": 1032 },
-  { "setor": "AVIÃO DO METAVERSO", "ramal": 1033 },
-  { "setor": "DEMUTRAN", "ramal": 1034 },
-  { "setor": "SECRETARIA DA MULHER", "ramal": 1035 },
-  { "setor": "SECRETARIA DE EDUCAÇÃO", "ramal": 1036 },
-  { "setor": "SECRETARIA DE ESPORTE E LAZER", "ramal": 1037 },
-  { "setor": "SECRETARIA DE SAÚDE", "ramal": 1038 },
-  { "setor": "DPO DE IPIABAS", "ramal": 1039 },
-  { "setor": "10º BATALHÃO DE POLÍCIA MILITAR DO RIO DE JANEIRO", "ramal": 1040 },
-  { "setor": "SECRETARIA MUNICIPAL DE SAÚDE", "ramal": 1041 },
-  { "setor": "DST/AIDS", "ramal": 1042 },
-  { "setor": "FARMÁCIA POPULAR", "ramal": 1043 },
-  { "setor": "LABORATÓRIO DE PATOLOGIA CLÍNICA", "ramal": 1044 },
-  { "setor": "POSTO DE SAÚDE ALBERT SABIN", "ramal": 1045 },
-  { "setor": "PROGRAMA DE SAÚDE DA FAMÍLIA PREF. FRANCISCO DE PAULA MOURA", "ramal": 1046 },
-  { "setor": "ESF DR. VALÉRIA MARIA MACEDO IUNES", "ramal": 1047 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE SILVÉRIA JÚLIA DE SOUZA", "ramal": 1048 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE BENEDITO DE SOUZA", "ramal": 1049 },
-  { "setor": "PROGRAMA DE SAÚDE DA FAMÍLIA JOÃO ELIAS GUEDES", "ramal": 1050 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE JOÃO GOMES", "ramal": 1051 },
-  { "setor": "PROGRAMA DE SAÚDE DA FAMÍLIA DOM JOSÉ ANDRÉ", "ramal": 1052 },
-  { "setor": "PROGRAMA DE SAÚDE DA FAMÍLIA DR. OSWALDO MILWARD", "ramal": 1053 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE PREFEITO JOÃO ANTÔNIO CAMERANO", "ramal": 1054 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE NELSON CLEMENTE DE OLIVEIRA", "ramal": 1055 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE MARIA JOAQUINA NAMBUCO", "ramal": 1056 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE DELCY PEDRO LOURENÇO", "ramal": 1057 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE PREF. ARTHUR LEANDRO A. COSTA", "ramal": 1058 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE FRANCISCO CARIELLO", "ramal": 1059 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE ALCEBÍADES NOGUEIRA DA SILVA", "ramal": 1060 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE SANTANA DA BARRA", "ramal": 1061 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE GERALDO DE OLIVEIRA", "ramal": 1062 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE TARGINO DOS SANTOS", "ramal": 1063 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE LUIZ CARRARO", "ramal": 1064 },
-  { "setor": "PROGRAMA DE SAÚDE DA FAMÍLIA NELSON GOMES DA GRAÇA", "ramal": 1065 },
-  { "setor": "UNIDADE BÁSICA DE SAÚDE ANTÔNIO CARDOSO DA SILVEIRA", "ramal": 1066 },
-  { "setor": "A ESF (ESTRATÉGIA DE SAÚDE DA FAMÍLIA) CENTRO", "ramal": 1067 },
-  { "setor": "VIGILÂNCIA EM SAÚDE (CEMUVIS) 1º - ANDAR", "ramal": 1068 },
-  { "setor": "CAPS II NOSSA CASA", "ramal": 1069 },
-  { "setor": "CAPSI BEM VIVER (INFANTO-JUVENIL)", "ramal": 1070 },
-  { "setor": "CENTRO DE ATENÇÃO PSICOSSOCIAL (CAPS AD)", "ramal": 1071 },
-  { "setor": "CAPS - AMBULATÓRIO", "ramal": 1072 },
-  { "setor": "CAPS RT (RESIDÊNCIA TERAPÊUTICA)", "ramal": 1073 },
-  { "setor": "FARMÁCIA MUNICIPAL", "ramal": 1074 },
-  { "setor": "POLO DE EMERGÊNCIA - PONTO 1", "ramal": 1075 },
-  { "setor": "PÓLO DE EMERGÊNCIA - PONTO 2", "ramal": 1076 },
-  { "setor": "PÓLO DE EMERGÊNCIA - PONTO 3", "ramal": 1077 },
-  { "setor": "PROGRAMA SAÚDE DA FAMÍLIA", "ramal": 1078 },
-  { "setor": "SAMU", "ramal": 1079 },
-  { "setor": "VIGILÂNCIA EM SAÚDE (CEMUVIS) 2º - ANDAR", "ramal": 1080 },
-  { "setor": "SECRETARIA MUNICIPAL DE EDUCAÇÃO", "ramal": 1081 },
-  { "setor": "CRECHE M. MARILDA PÊGAS DA SILVA", "ramal": 1082 },
-  { "setor": "CRECHE M. VEREADOR HEITOR FAVIERI", "ramal": 1083 },
-  { "setor": "CRECHE M. JOSÉ ALVES PEREIRA", "ramal": 1084 },
-  { "setor": "CRECHE M. JOSÉ ALBERTO DE OLIVEIRA", "ramal": 1085 },
-  { "setor": "CRECHE M. HELENA FIGNER", "ramal": 1086 },
-  { "setor": "CRECHE M. GERALDO DE OLIVEIRA LIMA", "ramal": 1087 },
-  { "setor": "J. I. M. PROF. MURILO BRAGA", "ramal": 1088 },
-  { "setor": "J.I.PROF. NEWTON ROCHA BRANDÃO", "ramal": 1089 },
-  { "setor": "J.I. MONTEIRO LOBATO", "ramal": 1090 },
-  { "setor": "J.I. ISMAEL", "ramal": 1091 },
-  { "setor": "J.E. ORTELINA BICHARA", "ramal": 1092 },
-  { "setor": "J.I. GENERAL OLÍVIO VIEIRA FILHO", "ramal": 1093 },
-  { "setor": "J.I. ALFREDO MANSUR ELIAS", "ramal": 1094 },
-  { "setor": "J.E.M. MAILDE AMORIM BRAGA", "ramal": 1095 },
-  { "setor": "E.E.M. SÃO JOSÉ DO TURVO", "ramal": 1096 },
-  { "setor": "E.E.M. JEHOVAH SANTOS", "ramal": 1097 },
-  { "setor": "E.E.M. CONDE MODESTO LEAL", "ramal": 1098 },
-  { "setor": "E.M.PROFª ANNA CASALLI DE OLIVEIRA", "ramal": 1099 },
-  { "setor": "E.M. PROF. ARLINDO RODRIGUES", "ramal": 1100 },
-  { "setor": "E.M. MIGUEL VASCONCELLOS", "ramal": 1101 },
-  { "setor": "E.E.M. MARIETA VASCONCELLOS COUTINHO COELHO", "ramal": 1102 },
-  { "setor": "E.M. JOÃO DE DEUS", "ramal": 1103 },
-  { "setor": "E.M. AMÉRICA BARBOSA DA SILVA", "ramal": 1104 },
-  { "setor": "E.M. MARIA DE LOURDES COSTA COIMBRA", "ramal": 1105 },
-  { "setor": "E.M. CORTINES CERQUEIRA", "ramal": 1106 },
-  { "setor": "E.M. PROF.ª AMÉLIA DE JESUS LISBOA", "ramal": 1107 },
-  { "setor": "CIEP 428–DONA MARIANA COELHO", "ramal": 1108 },
-  { "setor": "CIEP 284–NELLY DE TOLEDO ROCHA", "ramal": 1109 },
-  { "setor": "E.M. ADMA DAVID CHEDID", "ramal": 1110 },
-  { "setor": "E.M. JORGE DE FREITAS TINOCO", "ramal": 1111 },
-  { "setor": "E.M. MANOEL FONSECA", "ramal": 1112 },
-  { "setor": "E.M. MARIO MARIOTINI", "ramal": 1113 },
-  { "setor": "E.E.M. GERVÁSIO ALVES PEREIRA", "ramal": 1114 },
-  { "setor": "E.E.M. HÉLIO CRUZ DE OLIVEIRA", "ramal": 1115 },
-  { "setor": "CRECHE PAULO CARNEIRO MARINS", "ramal": 1116 },
-  { "setor": "CRECHE SEMENTINHA DO AMANHÃ", "ramal": 1117 },
-  { "setor": "ESCOLA ESTADUAL ISA FERNANDES", "ramal": 1118 },
-  { "setor": "ESCOLA MARIA GONZAGA DE OLIVEIRA", "ramal": 1119 },
-  { "setor": "ESCOLA PROFESSORA MARIA APARECIDA PÊGAS PEREIRA", "ramal": 1120 },
-  { "setor": "JARDIM DE INFÂNCIA PROFESSORA MARIA DULCE BRAUNE PORTUGAL", "ramal": 1121 },
-  { "setor": "JARDIM ESCOLA PEIXINHO DOURADO", "ramal": 1122 },
-  { "setor": "E.E.M. MARIA NAZARETH SANTOS SILVA", "ramal": 1123 },
-  { "setor": "SECRETARIA DE ASSISTÊNCIA SOCIAL", "ramal": 1124 },
-  { "setor": "CENTRO DE REFERÊNCIA MUNICIPAL DE ASSISTÊNCIA SOCIAL – CRAS - CALIFÓRNIA", "ramal": 1125 },
-  { "setor": "CENTRO DE REFERÊNCIA DE ASSISTÊNCIA SOCIAL – CRAS – VARGEM ALEGRE", "ramal": 1126 },
-  { "setor": "CENTRO DE REFERÊNCIA DE ASSISTÊNCIA SOCIAL – CRAS – AREAL", "ramal": 1127 },
-  { "setor": "CENTRO DE REFERÊNCIA DE ASSISTÊNCIA SOCIAL – CRAS – CENTRO", "ramal": 1128 },
-  { "setor": "CENTRO DE REFERÊNCIA ESPECIALIZADO DE ASSISTÊNCIA SOCIAL - CREAS", "ramal": 1129 },
-  { "setor": "ACESSUAS TRABALHO", "ramal": 1130 },
-  { "setor": "ABRIGO MUNICIPAL PARA CRIANÇAS E ADOLESCENTES", "ramal": 1131 },
-  { "setor": "ABRIGO PARA PESSOAS EM SITUAÇÃO DE RUA", "ramal": 1132 },
-  { "setor": "FAMÍLIA ACOLHEDORA", "ramal": 1133 },
-  { "setor": "NÚCLEO DE ATENDIMENTO DE VÍTIMAS DE INTOLERÂNCIA RELIGIOSA", "ramal": 1134 },
-  { "setor": "SETOR DO CADASTRO ÚNICO E CASA DOS CONSELHOS", "ramal": 1135 }
+  {
+    "setor": "PREFEITURA MUNICIPAL DE BARRA DO PIRAÍ (SECRETARIA DE ADMINISTRAÇÃO)",
+    "ramal": 1001
+  },
+  {
+    "setor": "SECRETARIA DE INOVAÇÃO E TECNOLOGIA DA INFORMAÇÃO",
+    "ramal": 1002
+  },
+  {
+    "setor": "SECRETARIA DE HABILITAÇÃO",
+    "ramal": 1003
+  },
+  {
+    "setor": "SECRETARIA DE GOVERNO",
+    "ramal": 1004
+  },
+  {
+    "setor": "SECRETARIA DE FAZENDA",
+    "ramal": 1005
+  },
+  {
+    "setor": "PROCURADORIA GERAL",
+    "ramal": 1006
+  },
+  {
+    "setor": "SECRETARIA DE AGRICULTURA",
+    "ramal": 1007
+  },
+  {
+    "setor": "SECRETARIA DE ÁGUA E ESGOTO (ADMINISTRAÇÃO)",
+    "ramal": 1008
+  },
+  {
+    "setor": "SECRETARIA DE ÁGUA E ESGOTO (TRATAMENTO DE ÁGUA)",
+    "ramal": 1009
+  },
+  {
+    "setor": "SECRETARIA DE AMBIENTE",
+    "ramal": 1010
+  },
+  {
+    "setor": "SECRETARIA DE ASSISTÊNCIA SOCIAL",
+    "ramal": 1011
+  },
+  {
+    "setor": "SECRETARIA DE CIDADANIA E ORDEM PÚBLICA",
+    "ramal": 1012
+  },
+  {
+    "setor": "SECRETARIA DE COMUNICAÇÃO",
+    "ramal": 1013
+  },
+  {
+    "setor": "SECRETARIA DE CULTURA",
+    "ramal": 1014
+  },
+  {
+    "setor": "SECRETARIA DE DEFESA CIVIL",
+    "ramal": 1015
+  },
+  {
+    "setor": "SECRETARIA DE OBRAS PÚBLICAS",
+    "ramal": 1016
+  },
+  {
+    "setor": "SECRETARIA DE RECURSOS HUMANOS",
+    "ramal": 1017
+  },
+  {
+    "setor": "SECRETARIA DE SERVIÇOS PÚBLICOS",
+    "ramal": 1018
+  },
+  {
+    "setor": "SECRETARIA DE TRABALHO E DESENVOLVIMENTO ECONÔMICO*",
+    "ramal": 1019
+  },
+  {
+    "setor": "SECRETARIA DE TURISMO E CULTURA",
+    "ramal": 1020
+  },
+  {
+    "setor": "SECRETARIA DO COMPLEXO DA CALIFÓRNIA",
+    "ramal": 1021
+  },
+  {
+    "setor": "SECRETARIA DO BEM ESTAR ANIMAL",
+    "ramal": 1022
+  },
+  {
+    "setor": "CONTROLADORIA",
+    "ramal": 1023
+  },
+  {
+    "setor": "ALMOXARIFADO",
+    "ramal": 1024
+  },
+  {
+    "setor": "PROCON",
+    "ramal": 1025
+  },
+  {
+    "setor": "SINE",
+    "ramal": 1026
+  },
+  {
+    "setor": "JUCERJA",
+    "ramal": 1027
+  },
+  {
+    "setor": "ARQUIVO MUNICIPAL",
+    "ramal": 1028
+  },
+  {
+    "setor": "PATRIMONIO",
+    "ramal": 1029
+  },
+  {
+    "setor": "LGBT",
+    "ramal": 1030
+  },
+  {
+    "setor": "POSTO GUARDA MUNICIPAL",
+    "ramal": 1031
+  },
+  {
+    "setor": "AVIÃO DO METAVERSO",
+    "ramal": 1032
+  },
+  {
+    "setor": "DEMUTRAN",
+    "ramal": 1033
+  },
+  {
+    "setor": "SECRETARIA DA MULHER",
+    "ramal": 1034
+  },
+  {
+    "setor": "SECRETARIA DE EDUCAÇÃO",
+    "ramal": 1035
+  },
+  {
+    "setor": "SECRETARIA DE ESPORTE E LAZER",
+    "ramal": 1036
+  },
+  {
+    "setor": "SECRETARIA DE SAÚDE",
+    "ramal": 1037
+  },
+  {
+    "setor": "DPO DE IPIABAS",
+    "ramal": 1038
+  },
+  {
+    "setor": "10º BATALHÃO DE POLÍCIA MILITAR DO RIO DE JANEIRO",
+    "ramal": 1039
+  },
+  {
+    "setor": "SECRETARIA MUNICIPAL DE SAÚDE",
+    "ramal": 1040
+  },
+  {
+    "setor": "DST/AIDS",
+    "ramal": 1041
+  },
+  {
+    "setor": "FARMÁCIA POPULAR",
+    "ramal": 1042
+  },
+  {
+    "setor": "LABORATÓRIO DE PATOLOGIA CLÍNICA",
+    "ramal": 1043
+  },
+  {
+    "setor": "POSTO DE SAÚDE ALBERT SABIN",
+    "ramal": 1044
+  },
+  {
+    "setor": "PROGRAMA DE SAÚDE DA FAMÍLIA PREF. FRANCISCO DE PAULA MOURA",
+    "ramal": 1045
+  },
+  {
+    "setor": "ESF DR. VALÉRIA MARIA MACEDO IUNES",
+    "ramal": 1046
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE SILVÉRIA JÚLIA DE SOUZA",
+    "ramal": 1047
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE BENEDITO DE SOUZA",
+    "ramal": 1048
+  },
+  {
+    "setor": "PROGRAMA DE SAÚDE DA FAMÍLIA JOÃO ELIAS GUEDES",
+    "ramal": 1049
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE JOÃO GOMES",
+    "ramal": 1050
+  },
+  {
+    "setor": "PROGRAMA DE SAÚDE DA FAMÍLIA DOM JOSÉ ANDRÉ",
+    "ramal": 1051
+  },
+  {
+    "setor": "PROGRAMA DE SAÚDE DA FAMÍLIA DR. OSWALDO MILWARD",
+    "ramal": 1052
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE PREFEITO JOÃO ANTÔNIO CAMERANO",
+    "ramal": 1053
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE NELSON CLEMENTE DE OLIVEIRA",
+    "ramal": 1054
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE MARIA JOAQUINA NAMBUCO",
+    "ramal": 1055
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE DELCY PEDRO LOURENÇO",
+    "ramal": 1056
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE PREF. ARTHUR LEANDRO A. COSTA",
+    "ramal": 1057
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE FRANCISCO CARIELLO",
+    "ramal": 1058
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE ALCEBÍADES NOGUEIRA DA SILVA",
+    "ramal": 1059
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE SANTANA DA BARRA",
+    "ramal": 1060
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE GERALDO DE OLIVEIRA",
+    "ramal": 1061
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE TARGINO DOS SANTOS",
+    "ramal": 1062
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE LUIZ CARRARO",
+    "ramal": 1063
+  },
+  {
+    "setor": "PROGRAMA DE SAÚDE DA FAMÍLIA NELSON GOMES DA GRAÇA",
+    "ramal": 1064
+  },
+  {
+    "setor": "UNIDADE BÁSICA DE SAÚDE ANTÔNIO CARDOSO DA SILVEIRA",
+    "ramal": 1065
+  },
+  {
+    "setor": "A ESF (ESTRATÉGIA DE SAÚDE DA FAMÍLIA) CENTRO",
+    "ramal": 1066
+  },
+  {
+    "setor": "VIGILÂNCIA EM SAÚDE (CEMUVIS) 1º - ANDAR",
+    "ramal": 1067
+  },
+  {
+    "setor": "CAPS II NOSSA CASA",
+    "ramal": 1068
+  },
+  {
+    "setor": "CAPSI BEM VIVER (INFANTO-JUVENIL)",
+    "ramal": 1069
+  },
+  {
+    "setor": "CENTRO DE ATENÇÃO PSICOSSOCIAL (CAPS AD)",
+    "ramal": 1070
+  },
+  {
+    "setor": "CAPS - AMBULATÓRIO",
+    "ramal": 1071
+  },
+  {
+    "setor": "CAPS RT (RESIDÊNCIA TERAPÊUTICA)",
+    "ramal": 1072
+  },
+  {
+    "setor": "FARMÁCIA MUNICIPAL",
+    "ramal": 1073
+  },
+  {
+    "setor": "POLO DE EMERGÊNCIA - PONTO 1",
+    "ramal": 1074
+  },
+  {
+    "setor": "PÓLO DE EMERGÊNCIA - PONTO 2",
+    "ramal": 1075
+  },
+  {
+    "setor": "PÓLO DE EMERGÊNCIA - PONTO 3",
+    "ramal": 1076
+  },
+  {
+    "setor": "PROGRAMA SAÚDE DA FAMÍLIA",
+    "ramal": 1077
+  },
+  {
+    "setor": "SAMU",
+    "ramal": 1078
+  },
+  {
+    "setor": "VIGILÂNCIA EM SAÚDE (CEMUVIS) 2º - ANDAR",
+    "ramal": 1079
+  },
+  {
+    "setor": "SECRETARIA MUNICIPAL DE EDUCAÇÃO",
+    "ramal": 1080
+  },
+  {
+    "setor": "CRECHE M. MARILDA PÊGAS DA SILVA",
+    "ramal": 1081
+  },
+  {
+    "setor": "CRECHE M. VEREADOR HEITOR FAVIERI",
+    "ramal": 1082
+  },
+  {
+    "setor": "CRECHE M. JOSÉ ALVES PEREIRA",
+    "ramal": 1083
+  },
+  {
+    "setor": "CRECHE M. JOSÉ ALBERTO DE OLIVEIRA",
+    "ramal": 1084
+  },
+  {
+    "setor": "CRECHE M. HELENA FIGNER",
+    "ramal": 1085
+  },
+  {
+    "setor": "CRECHE M. GERALDO DE OLIVEIRA LIMA",
+    "ramal": 1086
+  },
+  {
+    "setor": "J. I. M. PROF. MURILO BRAGA",
+    "ramal": 1087
+  },
+  {
+    "setor": "J.I.PROF. NEWTON ROCHA BRANDÃO",
+    "ramal": 1088
+  },
+  {
+    "setor": "J.I. MONTEIRO LOBATO",
+    "ramal": 1089
+  },
+  {
+    "setor": "J.I. ISMAEL",
+    "ramal": 1090
+  },
+  {
+    "setor": "J.E. ORTELINA BICHARA",
+    "ramal": 1091
+  },
+  {
+    "setor": "J.I. GENERAL OLÍVIO VIEIRA FILHO",
+    "ramal": 1092
+  },
+  {
+    "setor": "J.I. ALFREDO MANSUR ELIAS",
+    "ramal": 1093
+  },
+  {
+    "setor": "J.E.M. MAILDE AMORIM BRAGA",
+    "ramal": 1094
+  },
+  {
+    "setor": "E.E.M. SÃO JOSÉ DO TURVO",
+    "ramal": 1095
+  },
+  {
+    "setor": "E.E.M. JEHOVAH SANTOS",
+    "ramal": 1096
+  },
+  {
+    "setor": "E.E.M. CONDE MODESTO LEAL",
+    "ramal": 1097
+  },
+  {
+    "setor": "E.M.PROFª ANNA CASALLI DE OLIVEIRA",
+    "ramal": 1098
+  },
+  {
+    "setor": "E.M. PROF. ARLINDO RODRIGUES",
+    "ramal": 1099
+  },
+  {
+    "setor": "E.M. MIGUEL VASCONCELLOS",
+    "ramal": 1100
+  },
+  {
+    "setor": "E.E.M. MARIETA VASCONCELLOS COUTINHO COELHO",
+    "ramal": 1101
+  },
+  {
+    "setor": "E.M. JOÃO DE DEUS",
+    "ramal": 1102
+  },
+  {
+    "setor": "E.M. AMÉRICA BARBOSA DA SILVA",
+    "ramal": 1103
+  },
+  {
+    "setor": "E.M. MARIA DE LOURDES COSTA COIMBRA",
+    "ramal": 1104
+  },
+  {
+    "setor": "E.M. CORTINES CERQUEIRA",
+    "ramal": 1105
+  },
+  {
+    "setor": "E.M. PROF.ª AMÉLIA DE JESUS LISBOA",
+    "ramal": 1106
+  },
+  {
+    "setor": "CIEP 428–DONA MARIANA COELHO",
+    "ramal": 1107
+  },
+  {
+    "setor": "CIEP 284–NELLY DE TOLEDO ROCHA",
+    "ramal": 1108
+  },
+  {
+    "setor": "E.M. ADMA DAVID CHEDID",
+    "ramal": 1109
+  },
+  {
+    "setor": "E.M. JORGE DE FREITAS TINOCO",
+    "ramal": 1110
+  },
+  {
+    "setor": "E.M. MANOEL FONSECA",
+    "ramal": 1111
+  },
+  {
+    "setor": "E.M. MARIO MARIOTINI",
+    "ramal": 1112
+  },
+  {
+    "setor": "E.E.M. GERVÁSIO ALVES PEREIRA",
+    "ramal": 1113
+  },
+  {
+    "setor": "E.E.M. HÉLIO CRUZ DE OLIVEIRA",
+    "ramal": 1114
+  },
+  {
+    "setor": "CRECHE PAULO CARNEIRO MARINS",
+    "ramal": 1115
+  },
+  {
+    "setor": "CRECHE SEMENTINHA DO AMANHÃ",
+    "ramal": 1116
+  },
+  {
+    "setor": "ESCOLA ESTADUAL ISA FERNANDES",
+    "ramal": 1117
+  },
+  {
+    "setor": "ESCOLA MARIA GONZAGA DE OLIVEIRA",
+    "ramal": 1118
+  },
+  {
+    "setor": "ESCOLA PROFESSORA MARIA APARECIDA PÊGAS PEREIRA",
+    "ramal": 1119
+  },
+  {
+    "setor": "JARDIM DE INFÂNCIA PROFESSORA MARIA DULCE BRAUNE PORTUGAL",
+    "ramal": 1120
+  },
+  {
+    "setor": "JARDIM ESCOLA PEIXINHO DOURADO",
+    "ramal": 1121
+  },
+  {
+    "setor": "E.E.M. MARIA NAZARETH SANTOS SILVA",
+    "ramal": 1122
+  },
+  {
+    "setor": "SECRETARIA DE ASSISTÊNCIA SOCIAL",
+    "ramal": 1123
+  },
+  {
+    "setor": "CENTRO DE REFERÊNCIA MUNICIPAL DE ASSISTÊNCIA SOCIAL – CRAS - CALIFÓRNIA",
+    "ramal": 1124
+  },
+  {
+    "setor": "CENTRO DE REFERÊNCIA DE ASSISTÊNCIA SOCIAL – CRAS – VARGEM ALEGRE",
+    "ramal": 1125
+  },
+  {
+    "setor": "CENTRO DE REFERÊNCIA DE ASSISTÊNCIA SOCIAL – CRAS – AREAL",
+    "ramal": 1126
+  },
+  {
+    "setor": "CENTRO DE REFERÊNCIA DE ASSISTÊNCIA SOCIAL – CRAS – CENTRO",
+    "ramal": 1127
+  },
+  {
+    "setor": "CENTRO DE REFERÊNCIA ESPECIALIZADO DE ASSISTÊNCIA SOCIAL - CREAS",
+    "ramal": 1128
+  },
+  {
+    "setor": "ACESSUAS TRABALHO",
+    "ramal": 1129
+  },
+  {
+    "setor": "ABRIGO MUNICIPAL PARA CRIANÇAS E ADOLESCENTES",
+    "ramal": 1130
+  },
+  {
+    "setor": "ABRIGO PARA PESSOAS EM SITUAÇÃO DE RUA",
+    "ramal": 1131
+  },
+  {
+    "setor": "FAMÍLIA ACOLHEDORA",
+    "ramal": 1132
+  },
+  {
+    "setor": "NÚCLEO DE ATENDIMENTO DE VÍTIMAS DE INTOLERÂNCIA RELIGIOSA",
+    "ramal": 1133
+  },
+  {
+    "setor": "SETOR DO CADASTRO ÚNICO E CASA DOS CONSELHOS",
+    "ramal": 1134
+  }
 ]
