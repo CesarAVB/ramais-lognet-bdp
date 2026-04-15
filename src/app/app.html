@@ -15,23 +15,25 @@
         <p>Digite o nome do setor ou o número do ramal.</p>
       </div>
 
-      <app-search-bar [query]="query()" (queryChange)="onQueryChange($event)" />
+      <div class="search-main">
+        <app-search-bar [query]="query()" (queryChange)="onQueryChange($event)" />
 
-      <div class="search-status" aria-live="polite">
-        <span class="status-pill">
-          <small>Resultados</small>
-          <strong>{{ filteredTotal() }}</strong>
-        </span>
-        <span class="status-pill subtle">
-          <small>Total</small>
-          <strong>{{ totalRamais() }}</strong>
-        </span>
-        @if (query()) {
-          <span class="status-pill query-pill">
-            <small>Filtro</small>
-            <strong>{{ query() }}</strong>
+        <div class="search-status" aria-live="polite">
+          <span class="status-pill">
+            <small>Resultados</small>
+            <strong>{{ filteredTotal() }}</strong>
           </span>
-        }
+          <span class="status-pill subtle">
+            <small>Total</small>
+            <strong>{{ totalRamais() }}</strong>
+          </span>
+          @if (query()) {
+            <span class="status-pill query-pill">
+              <small>Filtro</small>
+              <strong>{{ query() }}</strong>
+            </span>
+          }
+        </div>
       </div>
     </div>
   </section>

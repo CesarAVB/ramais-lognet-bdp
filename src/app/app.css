@@ -21,31 +21,29 @@
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   width: 100%;
-  padding: 1rem var(--spacing-md) 1.15rem;
+  padding: 0.85rem var(--spacing-md) 1rem;
   border-bottom: 1px solid rgba(232, 78, 15, 0.16);
-  box-shadow: 0 14px 34px rgba(30, 42, 56, 0.08);
+  box-shadow: 0 10px 24px rgba(30, 42, 56, 0.06);
 }
 
 .search-shell {
   display: grid;
-  gap: 1rem;
+  gap: 0.85rem;
   width: 100%;
-  max-width: 72rem;
+  max-width: 78rem;
   margin: 0 auto;
-  justify-items: center;
-  padding: 1rem;
-  border-radius: 1.5rem;
+  padding: 0.9rem 1rem;
+  border-radius: 1.1rem;
   background:
-    radial-gradient(circle at top, rgba(232, 78, 15, 0.08), transparent 48%),
+    radial-gradient(circle at top, rgba(232, 78, 15, 0.06), transparent 42%),
     rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(232, 78, 15, 0.1);
 }
 
 .search-copy {
   display: grid;
-  gap: 0.25rem;
+  gap: 0.15rem;
   text-align: center;
-  max-width: 38rem;
 }
 
 .search-label {
@@ -58,7 +56,7 @@
 
 .search-title,
 .results-header h2 {
-  font-size: clamp(1.15rem, 4vw, 1.75rem);
+  font-size: clamp(1.1rem, 3vw, 1.45rem);
   line-height: 1.1;
   letter-spacing: -0.03em;
   margin: 0;
@@ -67,24 +65,30 @@
 .search-copy p {
   margin: 0;
   color: var(--color-muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+}
+
+.search-main {
+  display: grid;
+  gap: 0.8rem;
+  width: 100%;
 }
 
 .search-status {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.65rem;
+  gap: 0.6rem;
   width: 100%;
 }
 
 .status-pill {
-  min-width: 8rem;
+  min-width: 9rem;
   display: grid;
   gap: 0.1rem;
-  padding: 0.8rem 1rem;
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.9);
+  padding: 0.65rem 0.95rem;
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.82);
   border: 1px solid rgba(232, 78, 15, 0.12);
   text-align: center;
 }
@@ -100,7 +104,7 @@
 .status-pill strong {
   color: var(--color-text);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
 }
 
 .status-pill.subtle {
@@ -109,7 +113,7 @@
 
 .query-pill strong {
   color: var(--color-primary);
-  max-width: 14rem;
+  max-width: 18rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -145,8 +149,7 @@
 
 @media (max-width: 600px) {
   .search-shell {
-    padding: 0.85rem;
-    border-radius: 1.2rem;
+    padding: 0.8rem;
   }
 
   .search-copy p {
@@ -155,13 +158,30 @@
 
   .status-pill {
     min-width: calc(50% - 0.35rem);
-    padding: 0.75rem 0.85rem;
   }
 }
 
 @media (min-width: 768px) {
   .search-wrapper {
-    padding: 1.25rem var(--spacing-xl) 1.35rem;
+    padding: 1rem var(--spacing-xl) 1.1rem;
+  }
+
+  .search-shell {
+    grid-template-columns: minmax(16rem, 24rem) minmax(0, 1fr);
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .search-copy {
+    text-align: left;
+  }
+
+  .search-main {
+    align-items: center;
+  }
+
+  .search-status {
+    justify-content: flex-start;
   }
 
   .results-section {
