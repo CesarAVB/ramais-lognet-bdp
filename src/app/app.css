@@ -181,7 +181,7 @@
   }
 
   .search-status {
-    justify-content: flex-start;
+    display: none;
   }
 
   .results-section {
